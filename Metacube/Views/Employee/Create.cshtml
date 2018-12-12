@@ -1,0 +1,26 @@
+@model Metacube.Models.Employee
+
+@{
+    ViewData["Title"] = "Add a new Employee";
+}
+<h2>@ViewData["Title"]</h2>
+
+@using (Html.BeginForm("Create", "Employee", FormMethod.Post))
+{
+    <div>
+        <div>
+            <span>Employee Name : </span>
+            @Html.TextBoxFor(m => m.Name)
+        </div>
+        <div>
+            <span>Fathers Name : </span>
+            @Html.TextBoxFor(m => m.FatherName)
+        </div>
+        <div>
+            <span>Employee Age : </span>
+            @Html.TextBoxFor(m => m.Age)
+        </div>
+
+        <input type="submit" value="Add" />
+    </div>
+}

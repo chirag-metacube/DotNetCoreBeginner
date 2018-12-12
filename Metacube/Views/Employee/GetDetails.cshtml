@@ -1,0 +1,44 @@
+@model Metacube.Models.Employee
+
+@{
+    ViewData["Title"] = "Employee Details";
+}
+<h2>@ViewData["Title"]</h2>
+
+@if(@Model != null && @Model.Id > 0)
+{
+    using (Html.BeginForm("Update", "Employee", FormMethod.Post))
+    {
+        <div>
+            <div>
+                <span>Employee Id : </span>
+                <span>@Html.TextBoxFor(m => m.Id, new { disabled = "disabled", @readonly = "readonly" })</span>
+                @Html.HiddenFor(model => model.Id)
+            </div>
+            <div>
+                <span>Employee Name : </span>
+                @Html.TextBoxFor(m => m.Name)
+            </div>
+            <div>
+                <span>Fathers Name : </span>
+                @Html.TextBoxFor(m => m.FatherName)
+            </div>
+            <div>
+                <span>Employee Age : </span>
+                @Html.TextBoxFor(m => m.Age)
+            </div>
+
+            <input type="submit" value="Update" />
+        </div>
+    }    
+
+    @using (Html.BeginForm("Delete", "Employee", FormMethod.Post))
+    {
+            @Html.HiddenFor(model => model.Id)
+            <input type="submit" value="Delete" />
+    }
+}
+else
+{
+    <h2>Employee Not Found</h2>
+}

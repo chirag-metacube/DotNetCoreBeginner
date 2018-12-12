@@ -1,0 +1,10 @@
+D:\Learn\Core\Metacube\bin\Debug\netcoreapp2.0\Metacube.deps.json
+D:\Learn\Core\Metacube\bin\Debug\netcoreapp2.0\Metacube.runtimeconfig.json
+D:\Learn\Core\Metacube\bin\Debug\netcoreapp2.0\Metacube.runtimeconfig.dev.json
+D:\Learn\Core\Metacube\bin\Debug\netcoreapp2.0\Metacube.dll
+D:\Learn\Core\Metacube\bin\Debug\netcoreapp2.0\Metacube.pdb
+D:\Learn\Core\Metacube\obj\Debug\netcoreapp2.0\Metacube.csproj.CoreCompileInputs.cache
+D:\Learn\Core\Metacube\obj\Debug\netcoreapp2.0\Metacube.AssemblyInfoInputs.cache
+D:\Learn\Core\Metacube\obj\Debug\netcoreapp2.0\Metacube.AssemblyInfo.cs
+D:\Learn\Core\Metacube\obj\Debug\netcoreapp2.0\Metacube.dll
+D:\Learn\Core\Metacube\obj\Debug\netcoreapp2.0\Metacube.pdb

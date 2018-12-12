@@ -1,0 +1,27 @@
+@model IEnumerable<Metacube.Models.Employee>
+
+@{
+    ViewData["Title"] = "List of Employees";
+}
+
+@if(ViewBag.FlashMessage.Length > 0){
+    <h3>@ViewBag.FlashMessage</h3>
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table>
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+    </tr>
+    @foreach(var emp in @Model){
+        <tr>
+            <td><a href='Employee/GetDetails?index=@emp.Id'>@emp.Id</a></td>
+            <td>@emp.Name</td>
+        </tr>
+    }
+</table>
+
+<a asp-action="Create" asp-controller="Employee">Add an Employee</a>
+<a asp-action="ThrowError" asp-controller="Employee">Throw Error</a>
